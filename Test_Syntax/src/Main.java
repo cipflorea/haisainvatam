@@ -1,10 +1,11 @@
 import testDispatch.TestDispatch;
+import testMisc.TestMisc;
 
 public class Main
 {
   public static void main(String[] args)
   {
-    TestDispatch.testAll();
+    TestMisc.test();
     
     System.out.println("Done!");
   }
