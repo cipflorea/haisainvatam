@@ -9,14 +9,14 @@ public class Utils
     Random rand = new Random();
     r = Math.round(r * rand.nextFloat());
     String thName = Thread.currentThread().getName();
-    System.out.println(thName + ": (sleeps " + r + ")");
+    Print(thName + ": (sleeps " + r + ")");
     try
     {
       Thread.sleep(r);
     }
     catch (InterruptedException ex)
     {
-      System.out.println("(FUCK - " + thName + ": woke up from Sleeps)");
+      Print("(FUCK - " + thName + ": woke up from Sleeps)");
     }
   }
   
@@ -24,14 +24,14 @@ public class Utils
   public static void Sleep(long r)
   {
     String thName = Thread.currentThread().getName();
-    System.out.println(thName + ": (sleeps " + r + ")");
+    Print(thName + ": (sleeps " + r + ")");
     try
     {
       Thread.sleep(r);
     }
     catch (InterruptedException ex)
     {
-      System.out.println("(FUCK - " + thName + ": woke up from Sleeps)");
+      Print("(FUCK - " + thName + ": woke up from Sleeps)");
     }
   }
   
@@ -45,9 +45,9 @@ public class Utils
     }
     catch (InterruptedException ex)
     {
-      System.out.println("(FUCK - " + thName + ": woke up from Join)");
+      Print("(FUCK - " + thName + ": woke up from Join)");
     }
-    System.out.println(thName + ": Thread Terminated!");
+    Print(thName + ": Thread Terminated!");
   }
   
   
