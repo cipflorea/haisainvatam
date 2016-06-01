@@ -1,12 +1,12 @@
-import testDispatch.TestDispatch;
-import testMisc.TestMisc;
-import testTemplate.TestTemplate;
+import testInner.TestInner;
+import testInner.TopClass;
+import testReflection.TestReflection;
 
 public class Main
 {
-  public static void main(String[] args)
+  public static void main(String[] args) throws Exception
   {
-    TestTemplate.test();
+    TestReflection.test3();
     System.out.println("Done!");
   }
 }
